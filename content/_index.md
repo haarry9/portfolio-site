@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ""
+title: "Harishankar P V"
 date: 2022-10-24
 type: landing
 
@@ -16,7 +16,7 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV
+        text: Download Resume
         url: uploads/resume.pdf
     design:
       css_class: dark
@@ -24,9 +24,9 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
+          filename: image.svg
           filters:
-            brightness: 1.0
+            brightness: 0.7
           size: cover
           position: center
           parallax: false
@@ -43,42 +43,42 @@ sections:
     design:
       columns: '1'
   - block: collection
-    id: papers
+    id: projects
     content:
-      title: Featured Publications
+      title: Featured Projects
       filters:
         folders:
-          - publication
+          - project
         featured_only: true
     design:
       view: article-grid
       columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      view: article-grid
-      columns: 1
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: ""
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - event
+  #   design:
+  #     view: article-grid
+  #     columns: 1
   - block: collection
     id: news
     content:
-      title: Recent News
-      subtitle: ''
-      text: ''
+      title: Recent Blogs
+      subtitle: 'Some of my personal writings'
+      text: 'Some of my personal writings'
       # Page type to display. E.g. post, talk, publication...
       page_type: post
       # Choose how many pages you would like to display (0 = all pages)
@@ -103,7 +103,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
   - block: cta-card
-    demo: true # Only display this section in the Hugo Blox Builder demo site
+    demo: false # Only display this section in the Hugo Blox Builder demo site
     content:
       title: 👉 Build your own academic website like this
       text: |-
